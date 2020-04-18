@@ -9,7 +9,7 @@ modloader {
 
 pack {
   multimc {
-    // path tp the published modpack definition (not sk always)
+    // upload the content of build/_upload/experimental/irritatered after running `irritatered_pack_exp`
     selfupdateUrl = "path/to/upload-location/irritatered.json"
   }
   experimental {
