@@ -1,7 +1,7 @@
 plugins {
     // kotlin("jvm") version "1.3.70" // automatically applied
     // idea // automatically applied
-    id("voodoo") version "0.5.1-SNAPSHOT"
+    id("voodoo") version "0.5.9-SNAPSHOT"
 }
 
 voodoo {
@@ -11,11 +11,11 @@ voodoo {
     addTask(name = "changelog") {
         changelog()
     }
-    addTask(name = "pack_exp") {
-        pack().experimental()
+    addTask(name = "pack_voodoo") {
+        pack().voodoo()
     }
-    addTask(name = "pack_mmc-exp") {
-        pack().multimcExperimental()
+    addTask(name = "pack_mmc-voodoo") {
+        pack().multimcVoodoo()
     }
     addTask(name = "pack_mmc-fat") {
         pack().multimcFat()
@@ -28,8 +28,8 @@ voodoo {
     }
     addTask(name = "pack_all") {
         pack().server()
-        pack().experimental()
-        pack().multimcExperimental()
+        pack().voodoo()
+        pack().multimcVoodoo()
         pack().multimcFat()
     }
 

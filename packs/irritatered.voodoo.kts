@@ -1,7 +1,5 @@
-import newformat.builder.FnPatternList
-
 mcVersion = "1.15.2"
-title = "Rename_me"
+title = "Irritatered"
 authors = listOf("nikky")
 modloader {
   fabric(Fabric.intermediary.v_1_15_2)
